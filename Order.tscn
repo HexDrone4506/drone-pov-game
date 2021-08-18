@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Order.gd" type="Script" id=1]
+
+[node name="Order" type="Node"]
+script = ExtResource( 1 )
+
+[node name="AcceptanceTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="ConfirmationTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="AcceptanceTimer" to="." method="_on_AcceptanceTimer_timeout"]
