@@ -24,15 +24,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://HexCodeInput.gd"
 }, {
-"base": "Order",
-"class": "MarchOrder",
+"base": "Spatial",
+"class": "Level",
 "language": "GDScript",
-"path": "res://MarchOrder.gd"
+"path": "res://Spatial.gd"
 }, {
 "base": "Node",
 "class": "Order",
 "language": "GDScript",
 "path": "res://Order.gd"
+}, {
+"base": "Node",
+"class": "OrderSystem",
+"language": "GDScript",
+"path": "res://OrderSystem.gd"
 }, {
 "base": "KinematicBody",
 "class": "Player",
@@ -43,15 +48,22 @@ _global_script_classes=[ {
 "class": "ScrollingMessage",
 "language": "GDScript",
 "path": "res://ui/ScrollingMessage.gd"
+}, {
+"base": "Spatial",
+"class": "Waypoint",
+"language": "GDScript",
+"path": "res://Waypoint.gd"
 } ]
 _global_script_class_icons={
 "Drone": "",
 "HUD": "",
 "HexCodeInput": "",
-"MarchOrder": "",
+"Level": "",
 "Order": "",
+"OrderSystem": "",
 "Player": "",
-"ScrollingMessage": ""
+"ScrollingMessage": "",
+"Waypoint": ""
 }
 
 [application]

@@ -71,15 +71,10 @@ theme = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 0.4, 1, 1 )
 custom_colors/font_outline_modulate = Color( 0.415686, 0.223529, 0.415686, 1 )
 custom_colors/font_color_shadow = Color( 0.0901961, 0.117647, 0.529412, 1 )
-text = "Good drone, 4506"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="MessageTimer" type="Timer" parent="."]
-wait_time = 2.0
-one_shot = true
 
 [node name="MessagePlayer" type="AnimationPlayer" parent="."]
 anims/show_message = SubResource( 1 )
@@ -87,5 +82,3 @@ anims/show_message = SubResource( 1 )
 [node name="SymbolPlayer" type="AnimationPlayer" parent="."]
 autoplay = "hex_symbol"
 anims/hex_symbol = SubResource( 2 )
-
-[connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]

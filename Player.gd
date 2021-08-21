@@ -2,14 +2,10 @@ extends KinematicBody
 
 class_name Player
 
-signal emit_code(code)
-
 const MOVE_SPEED = 2
 const MOUSE_SENS = 0.5
 
 onready var raycast := $RayCast
-#onready var hud := $HUD
-#onready var crosshairs := $HUD/Crosshairs
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

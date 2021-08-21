@@ -34,7 +34,7 @@ func process_code() -> void:
 		scroll_message.play_message("4506 :: " + message)
 		# Optional: Makes wait for animation to stop before emitting hexcode.
 		yield(msgplayer, "animation_finished") 
-		emit_signal("player_entered_hexcode", hex_code, message)
+		emit_signal("player_entered_hexcode", hex_code)
 	else:
 		emit_signal("player_entered_bad_hexcode")
 	reset()
