@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Order.gd" type="Script" id=1]
+
+[node name="Order" type="Node"]
+script = ExtResource( 1 )
+
+[node name="IssueTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[node name="LoggingTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="IssueTimer" to="." method="_on_IssueTimer_timeout"]
+[connection signal="timeout" from="LoggingTimer" to="." method="_on_CompletionTimer_timeout"]
+[connection signal="timeout" from="LoggingTimer" to="." method="_on_LoggingTimer_timeout"]
