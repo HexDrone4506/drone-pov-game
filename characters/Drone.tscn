@@ -17,5 +17,5 @@ hframes = 3
 vframes = 5
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 0.999848, -0.0174524, 0, -7.62869e-10, -4.37047e-08, 1, -0.0174524, -0.999848, -4.37114e-08, 0, 0, 0 )
+transform = Transform( 0.999848, 0.0174524, -7.62869e-10, 0, -4.37114e-08, -1, -0.0174524, 0.999848, -4.37047e-08, 0, 0, 0 )
 shape = SubResource( 1 )

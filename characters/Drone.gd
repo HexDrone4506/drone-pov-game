@@ -8,7 +8,7 @@ var player_ref = null
 export var anim_col = 0
 
 func set_player(p):
-	player_ref = p
+	player_ref = p.get_node("Head")
 
 func display_sprite_based_on_player():
 	if player_ref == null:
